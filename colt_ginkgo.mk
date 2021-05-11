@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2020 The LineageOS Project
+# Copyright (C) 2021 The ColtOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -23,11 +23,15 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 # Inherit from ginkgo device
 $(call inherit-product, device/xiaomi/ginkgo/device.mk)
 
-# Inherit some common LineageOS stuff
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common ColtOS stuff
+$(call inherit-product, vendor/colt/config/common_full_phone.mk)
+TARGET_BOOT_ANIMATION_RES := 1080x2340
+COLT_BUILD_TYPE := Official
+COLT_BUILD_MAINTAINER := mg712702
+
 
 # Device identifier
-PRODUCT_NAME := lineage_ginkgo
+PRODUCT_NAME := colt_ginkgo
 PRODUCT_DEVICE := ginkgo
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi Note 8

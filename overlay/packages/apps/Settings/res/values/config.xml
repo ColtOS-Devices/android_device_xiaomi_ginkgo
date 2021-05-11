@@ -25,4 +25,8 @@
         <item>-1</item>
         <item>-1</item>
     </integer-array>
+
+    <!-- Smart Features -->
+    <bool name="config_supportSmartFeatures">true</bool>
+
 </resources>
